@@ -1,0 +1,198 @@
+@media screen and (min-width:768px){
+	.hero{
+		height: 45vh;
+    	&__title{
+    		font-size: 60px;
+    	}
+    	&__text{
+    		width:60%;
+    	}
+	}
+	.redefining-web{
+		&__img{
+		    height: 435px;
+		    background-size:100% auto;
+		}
+		&__heading{
+			font-size: 50px;
+			text-align:left;
+		}
+		&__para{
+		    text-align: left;
+		    padding-right: 15px;
+		}
+		&__btn{
+			margin-left:0;
+		}
+	}
+	.services{
+		padding:60px 0;
+		&__text{
+			width:45%;
+		}
+		&__item{
+			h3{
+				width:85%;
+			}
+		}
+	}
+	.our-team{
+		padding:60px 0;
+		&__text{
+			width: 60%;
+			font-size: 18px;
+    		line-height: 26px;
+		}
+		&__member{
+			p{
+				line-height: 24px;
+    			font-size: 18px;
+			}
+			&-image{
+				width: 50%;
+			}
+			h3{
+			font-size: 35px;
+			width:80%;
+			}
+			h4{
+			font-size: 20px;
+		    width: 90%;
+			}
+		}
+	}
+	.partners{
+		padding: 15px 0 15px 0;
+		&__wrapper{
+			img{
+			    padding: 0 10px 0 10px;
+			    margin-right: 50px;
+			    height: 40px;
+			}
+		}
+	}
+	.contact{
+		&__text{
+			width:70%;
+		}
+		&__container{
+		    display: inline-block;
+		    width: 50%;
+		    vertical-align: top;
+		    &-button{
+		    	margin: 0 0 40px 0;
+		    }
+		}
+		&__info{
+			display: inline-block;
+		    width: 49%;
+		    vertical-align: top;
+		    padding-top: 20px;
+		    &-breaker{
+		    	vertical-align: top;
+			    display: inline-block;
+			    width: 49%;
+		    }
+		}
+	}
+	
+	.navbar-default{
+	    background: transparent;
+	    position: absolute;
+	    width: 100%;
+	    border: 0 none;
+		 .navbar-nav {
+		    width: 40%;
+				.active{ 
+					a{
+						font-size:18px;
+						&:hover,&:active,&:focus {
+					    background: transparent;
+					    color: #fff;
+					}
+					
+				}
+			}
+		}
+	}
+	.navbar {
+	    max-width: 1100px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+}
+
+@media screen and (min-width:992px){
+	.hero{
+    	&__title{
+    		padding-top:70px;
+    	}
+    	&__text{
+			padding-top:40px;
+		}
+	}
+	.redefining-web{
+		&__img{
+		    height: 580px;
+		    background-size:100% auto;
+		}
+		&__heading{
+			padding-bottom: 20px;
+		}
+		&__para{
+			font-size:18px;
+			width:90%;
+		}
+	}
+	.services{
+		&__text{
+			width: 60%;
+		    font-size: 18px;
+		    line-height: 24px;
+		}
+	}
+	.our-team{
+		&__member {
+		    padding: 10px 0 20px 0;
+			    &:first-child{
+				padding: 10px 0 20px 0;
+				h3{
+					width:80%;
+				}
+			}
+		}
+	}
+	.partners{
+		&__wrapper{
+			padding:10px;
+		}
+	}
+	.navbar-default .navbar-nav {
+	    width: 30%;
+	}
+}
+
+@media screen and (min-width:1200px){
+	.hero{
+		height:95vh;
+		&__title{
+			padding-top:30vh;
+		}
+		&__cta{
+			margin-top:10vh;
+		}
+	}
+	.hero__wrapper,.our-team__wrapper,.contact__wrapper,.footer__wrapper,.redefining-web__wrapper{
+		max-width:1100px;
+		margin:0 auto;
+	}
+	.partners__wrapper{
+		.nike,.microsoft,.github{
+			width:200px;
+	    	margin-right: 150px;
+		}
+		.nike{
+			height:50px;
+		}
+	}
+}

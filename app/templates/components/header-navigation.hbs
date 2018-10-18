@@ -1,0 +1,32 @@
+{{#bs-navbar as |navbar|}}
+              <div class="navbar-header">
+                {{navbar.toggle}}
+                <a class="navbar-brand" href="#">SomeCompany</a>
+              </div>
+              {{#navbar.content}}
+                {{#navbar.nav as |nav|}}
+                  {{#nav.item}}
+                    {{#nav.link-to "index"}}<a {{action "showPricingModal"}}>Pricing</a> {{/nav.link-to}}
+                  {{/nav.item}}
+                  {{#nav.item}}
+                   {{#nav.link-to "index"}}<a {{action "showAboutModal"}}>About</a> {{/nav.link-to}}
+                  {{/nav.item}}
+                   {{#nav.item}}
+                    {{#nav.link-to "index"}}Contact{{/nav.link-to}}
+                  {{/nav.item}}
+                {{/navbar.nav}}
+              {{/navbar.content}}
+            {{/bs-navbar}} 
+                 
+{{#if isShowingModal}}
+  {{#modal-dialog targetAttachment="center"
+                  translucentOverlay=true }}
+    <div class="modal-body">
+      <button class="close-button" {{action "closeModal"}}>X</button>
+      {{modalDialogText}}
+    </div>
+  {{/modal-dialog}}
+{{/if}}
+
+
+            
